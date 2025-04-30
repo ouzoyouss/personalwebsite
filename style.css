@@ -1,0 +1,178 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1f1f1f;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f1f;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: red;
+  }
+  
+  /* Responsive (موبايل) */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 2rem;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .official-accounts {
+        text-align: center;
+        padding: 3rem 1rem;
+        background-color: #111;
+        color: #fff;
+      }
+      
+      .official-accounts h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #00ffff;
+      }
+      
+      .accounts {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+      
+      .accounts a {
+        font-size: 2rem;
+        color: #fff;
+        transition: transform 0.3s, color 0.3s;
+      }
+      
+      .accounts a:hover {
+        color: #00ffff;
+        transform: scale(1.2);
+      }
+      .projects {
+        background-color: #1a1a1a;
+        padding: 4rem 2rem;
+        color: white;
+        text-align: center;
+      }
+      
+      .projects h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: #00ffff;
+      }
+      
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+      
+      .project-card {
+        background-color: #2a2a2a;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0,255,255,0.1);
+        transition: transform 0.3s;
+      }
+      
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+      
+      .project-card h3 {
+        color: #00ffff;
+        margin-bottom: 1rem;
+      }
+      
+      .project-card p {
+        color: #ccc;
+        margin-bottom: 1rem;
+      }
+      
+      .project-card a {
+        text-decoration: none;
+        color: #00ffff;
+        font-weight: bold;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.3s;
+      }
+      
+      .project-card a:hover {
+        border-bottom: 1px solid #00ffff;
+      }
+    footer {
+        background-color: #627d8a;
+    }    
+    
+    
+    :root {
+        --bg-color: #111;
+        --text-color: #fff;
+        --accent-color: #00ffff;
+        --card-bg: #1a1a1a;
+      }
+      
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        transition: background-color 0.3s, color 0.3s;
+      }
+ 
+
+  
